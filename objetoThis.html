@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("This: ");
+        console.log(this);
+        console.log("window: ");
+        this.name = "hola mundo"
+        console.log(window);
+        console.log("this == windows");
+        console.log(this === window);
+
+        console.log(this.nombre);
+
+        this.nombre = "contexto global"
+        function imprimir() {
+            console.log(this.nombre)
+        }
+        imprimir()
+
+        const obj = {
+            nombre: "contexto objeto",
+            imprimir: function () {
+                console.log(this.nombre);
+            }
+        }
+        obj.imprimir()
+
+        const obj2 = {
+            nombre: "contexto objeto 2",
+            imprimir: imprimir
+        }
+        obj2.imprimir()
+
+        const obj3 = {
+            nombre: "contexto obj 3",
+            imprimir: () => {
+
+                console.log(this.nombre)
+            }
+        }
+        obj3.imprimir()
+
+        function Persona(nombre) {
+            this.nombre = nombre;
+            // return console.log(this.nombre);
+            /*   return function () {
+                console.log(this.nombre);
+            }*/
+            return () => console.log(this.nombre, 77);
+        }
+        let jon = new Persona("Jon")
+        jon()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(this);
+
+        this.lugar = "contexto global"
+
+        function saludar(saludo, aQuien) {
+            console.log(`${saludo} ${aQuien} desde el ${this.lugar}`);
+
+        }
+        saludar("hola", "kenai");
+
+        const obj = {
+            lugar: "contexto obj"
+        }
+
+        saludar.call(obj, "hola", "jon");
+        saludar.apply(obj, ["adios", "rohe"]);
+
+        //this.nombre = "window";
+
+        const persona = {
+            nombre: "jon",
+            saludar: function () {
+                console.log(`Hola ${this.nombre} `)
+            }
+        }
+        //persona.saludar();
+
+        const otraPersona = {
+            saludar: persona.saludar.bind()
+        }
+
+        otraPersona.saludar();
+
+    </script>
+</body>
+
+</html>

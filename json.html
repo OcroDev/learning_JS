@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const json = {
+            cadena: "rohe",
+            numero: 35,
+            booleano: true,
+            arreglo: ["correr", "programar", "comer"],
+            objeto: {
+                twitter: "@roheoo",
+                email: "roher@gmail.com"
+            },
+            nulo: null
+        }
+        console.log(json);
+
+        console.log(JSON.parse('[1,2,3]'));
+        console.log(JSON.parse('19'));
+        console.log(JSON.parse('{}'));
+        console.log(JSON.parse('"Hola mundo"'));
+        console.log(JSON.parse('null'));
+
+
+        console.log(JSON.stringify({}));
+
+        console.log(JSON.stringify(json));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "cadena": "rohe",
+  "numero": "35",
+  "booleano": "true",
+  "arreglo": ["correr", "programar", "comer"],
+  "objeto": {
+    "twitter": "@roheoo",
+    "email": "roher@gmail.com"
+  },
+  "nulo": null
+},
+
+{
+    "cadena":"rohe",
+    "numero":35,
+    "booleano":true,
+    "arreglo":["correr","programar","comer"],
+    "objeto":{"twitter":"@roheoo","email":"roher@gmail.com"},
+    "nulo":null
+}
