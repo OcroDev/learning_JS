@@ -378,3 +378,176 @@ $eventoSemanticoMultiple.addEventListener("click", (e) => {
   console.log(event);
 });
 */
+
+/****************************************** DOM 73 **********************************/
+/*
+const $eventoSemanticoMultiple = document.getElementById("evento-multiple");
+
+function saludar(nombre = "Desconocidx") {
+  alert(`Hola ${nombre}`);
+  console.log(event);
+}
+
+$eventoSemanticoMultiple.addEventListener("click", () => {
+  saludar("mundo");
+  saludar();
+});
+
+const $eventoRemover = document.getElementById("evento-remover");
+
+const removerDobleclick = (e) => {
+  alert(`removiendo el evento del tipo ${e.type}`);
+  $eventoRemover.removeEventListener("dblclick", removerDobleclick);
+  $eventoRemover.disabled = true;
+};
+
+$eventoRemover.addEventListener("dblclick", removerDobleclick);
+
+*/
+
+/****************************************** DOM 74 **********************************/
+/*
+const $divEventos = document.querySelectorAll(".eventos-flujo div");
+console.log($divEventos);
+
+function flujoEventos(e) {
+  console.log(
+    `Hola te saluda ${this.className}, el click lo originó ${e.target.className}`
+  );
+}
+
+$divEventos.forEach((div, e) => {
+  //fase de burbuja
+  //div.addEventListener("click", flujoEventos);
+  //fase de captura
+  //div.addEventListener("click", flujoEventos, true);
+  div.addEventListener("click", flujoEventos, { capture: true, once: true });
+
+});
+*/
+/****************************************** DOM 75 **********************************/
+/*
+const $divEventos = document.querySelectorAll(".eventos-flujo div"),
+$linkEventos = document.querySelector(".eventos-flujo a");
+
+console.log($divEventos);
+console.log($linkEventos);
+
+function flujoEventos(e) {
+    console.log(
+        `Hola te saluda ${this.className}, el click lo originó ${e.target.className}`
+        );
+        e.stopPropagation();
+    }
+    
+    $divEventos.forEach((div, e) => {
+        div.addEventListener("click", flujoEventos, false);
+    });
+    
+    $linkEventos.addEventListener("click", (e) => {
+        alert("alerta de evento");
+        e.preventDefault();
+        e.stopPropagation();
+    });
+    */
+
+/**************************** DOM 76 delegacion de eventos **********************/
+/*
+document.addEventListener("click", (e) => {
+    console.log("click en", e.target);
+    
+    //Evento en link de flujo de eventos
+    if (e.target.matches(".eventos-flujo a")) {
+    alert("hola click randoms");
+    e.preventDefault();
+  }
+
+  //Eventos en div de flujo de eventos
+  if (e.target.matches(".eventos-flujo div")) {
+    flujoEventos(e);
+  }
+});
+
+function flujoEventos(e) {
+    console.log(
+        `Hola te saluda ${this}, el click lo originó ${e.target.className}`
+        );
+    }
+    */
+
+/**************************** DOM 77 BOM **********************/
+/*
+window.addEventListener("resize", (e) => {
+  console.clear();
+  console.log("Evento resize");
+  console.log(window.innerWidth);
+  console.log(window.innerHeight);
+  console.log(window.outerWidth);
+  console.log(window.outerHeight);
+  console.log(e);
+});
+
+window.addEventListener("scroll", (e) => {
+  console.clear();
+  console.log("Evento scroll");
+  console.log(window.scrollX);
+  console.log(window.scrollY);
+  console.log(e);
+});
+
+window.addEventListener("load", (e) => {
+  //console.clear();
+  console.log("Evento load");
+  console.log(window.screenX);
+  console.log(window.screenY);
+  console.log(e);
+});
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  //console.clear();
+  console.log("Evento DOM CONTENT load");
+  console.log(e);
+});
+*/
+
+/**************************** DOM 78 BOM **********************/
+/*
+const $botonAbrir = document.getElementById("abrir-ventana"),
+  $botonCerrar = document.getElementById("cerrar-ventana"),
+  $botonImprimir = document.getElementById("imprimir-ventana");
+
+let ventana;
+$botonAbrir.addEventListener("click", (e) => {
+  ventana = open("https://jonmircha.com");
+});
+$botonCerrar.addEventListener("click", (e) => {
+    //close();
+    ventana.close();
+});
+$botonImprimir.addEventListener("click", (e) => {
+    print();
+});
+*/
+/**************************** 79 BOM **********************/
+/*
+/****** OBJETO URL *******
+
+console.log("objeto URL location");
+
+console.log(location);
+//console.log(location.reload());
+console.log(location.href);
+
+/****** OBJETO HISTORY *******
+console.log(history);
+console.log(history.scrollRestoration);
+//console.log(history.back());
+//console.log(history.forward());
+//console.log(history.go(1));
+
+/****** OBJETO NAVIGATOR *******
+console.log(navigator);
+
+*/
+
+/*******  80 EJERCICIOS ************/
