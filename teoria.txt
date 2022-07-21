@@ -1,0 +1,16 @@
+TEORIA API REST
+
+Rest se basa en reglas y estandares de protocolo http
+
+caracteristicas
+
+1 relacion cliente servidor
+    debilmente acoplados
+
+2 son sin estado
+
+3 cacheables
+
+4 interfaz uniforme endpoint
+
+5 sitemas de capas 
