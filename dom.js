@@ -455,7 +455,7 @@ function flujoEventos(e) {
 /*
 document.addEventListener("click", (e) => {
     console.log("click en", e.target);
-    
+     
     //Evento en link de flujo de eventos
     if (e.target.matches(".eventos-flujo a")) {
     alert("hola click randoms");
