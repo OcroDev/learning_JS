@@ -68,23 +68,25 @@ img {
   width: 100%;
   background-color: var(--second-modal-color);
   opacity: 0;
+  visibility: hidden;
   transition: transform 0.3s ease, opacity 1s ease;
 
   /*arriba
   transform: translate(0, -100%);*/
-  /*izquierda
-  transform: translate(-100%, 0);*/
+  /*izquierda*/
+  transform: translate(-100%, 0);
   /*abajo
   transform: translate(0, 100%);*/
   /*derecha
   transform: translate(100%, 0);
-  /*arriba*/
-  transform: translate(0, -100%);
+  /*arriba
+  transform: translate(0, -100%);*/
 }
 
 .panel.is-active {
   transform: translate(0, 0);
   opacity: 1;
+  visibility: visible;
 }
 
 .menu {
