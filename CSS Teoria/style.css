@@ -1,0 +1,62 @@
+/*aplica a los elementos hermanos hacia abajo*/
+.hermanos-general ~ li {
+  background-color: thistle;
+}
+.hermanos-adyacentes + li {
+  background-color: thistle;
+}
+
+/*selectores de atributos*/
+.selectores-atributo a[href] {
+  color: orangered;
+}
+
+.selectores-atributo a[target="_blank"] {
+  font-weight: bold;
+}
+
+.selectores-atributo a[href*="jonmircha"] {
+  font-size: 24px;
+}
+
+.selectores-atributo a[href^="http:"] {
+  text-decoration: none;
+}
+
+.selectores-atributo a[href$=".com"] {
+  background-color: black;
+}
+
+.selectores-atributo a[class~="cursos"] {
+  background-color: midnightblue;
+}
+.selectores-atributo a[class|="menu"] {
+  font-style: italic;
+}
+
+/*Selector universal*/
+
+* {
+  font-family: sans-serif;
+}
+
+.selector-universal * {
+  font-size: 24px;
+}
+
+/*pseudoclases*/
+
+.form-pseudoclases *:required {
+  border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+.form-pseudoclases *:focus {
+  background-color: skyblue;
+}
