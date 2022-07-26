@@ -16,7 +16,7 @@
     <section class="crud">
 
         <article style="width: 50%;">
-            <h2 class="crut-tittle">Agregar Santo</h2>
+            <h2 class="crud-tittle">Agregar Santo</h2>
 
             <form action="" class="crud-form d-flex flex-wrap">
                 <input type="text" name="nombre" placeholder="nombre" required class="form-control ">
@@ -24,8 +24,9 @@
                 <input type="text" name="constelacion" placeholder="constelacion" required class="form-control">
                 <br>
                 <input type="submit" value="Enviar" class="btn btn-success">
-                <input type=" hidden" name="id" style="visibility: hidden;">
+                <input type="hidden" name="id">
             </form>
+            <!-- fin de formulario -->
 
         </article>
         <br>
@@ -48,7 +49,7 @@
 
     </section>
 
-    <template id="crud-template">
+    <template class="crud-template">
         <tr>
             <td class="name"></td>
             <td class="constelation"></td>
@@ -58,7 +59,7 @@
             </td>
         </tr>
     </template>
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="./crud_ajax.js"></script>
 </body>
 

@@ -2,9 +2,9 @@ const d = document,
   $table = d.querySelector(".crud-table"),
   $form = d.querySelector(".crud-form"),
   $tittle = d.querySelector(".crud-tittle"),
-  $template = d.querySelector("#crud-template").content,
+  $template = d.querySelector(".crud-template").content,
   $fragment = d.createDocumentFragment();
-
+//funcion para encapsular el objeto ajax
 const ajax = (options) => {
   let { url, method, success, error, data } = options;
   const xhr = new XMLHttpRequest();
@@ -23,10 +23,11 @@ const ajax = (options) => {
   });
 
   xhr.open(method || "GET", url);
-  xhr.setRequestHeader("Content-type", "aplication/json; charset=utf-8");
-  console.log(data);
+  xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
   xhr.send(JSON.stringify(data));
 };
+
+//funcion para obtener los datos de la API
 const getAll = () => {
   ajax({
     method: "GET",
@@ -43,6 +44,9 @@ const getAll = () => {
         $template.querySelector(".edit").dataset.constelation =
           element.constelacion;
         $template.querySelector(".delete").dataset.id = element.id;
+        $template.querySelector(".delete").dataset.name = element.nombre;
+        $template.querySelector(".delete").dataset.constelation =
+          element.constelacion;
         let $clone = d.importNode($template, true);
         $fragment.appendChild($clone);
       });
@@ -59,6 +63,7 @@ const getAll = () => {
     data: null,
   });
 };
+
 d.addEventListener("DOMContentLoaded", getAll);
 
 d.addEventListener("submit", (e) => {
@@ -71,7 +76,7 @@ d.addEventListener("submit", (e) => {
         url: "http://localhost:3000/santos",
         method: "POST",
         success: (res) => {
-          //location.reload();
+          location.reload();
         },
         error: (err) => {
           $form.insertAdjacentHTML(
@@ -86,12 +91,50 @@ d.addEventListener("submit", (e) => {
       });
     } else {
       //update - put
+      ajax({
+        url: `http://localhost:3000/santos/${e.target.id.value}`,
+        method: "PUT",
+        success: (res) => {
+          location.reload();
+        },
+        error: (err) => {
+          $form.insertAdjacentHTML(
+            "afterend",
+            `<p style="color:red"><b>${err}</b></p>`
+          );
+        },
+        data: {
+          nombre: e.target.nombre.value,
+          constelacion: e.target.constelacion.value,
+        },
+      });
     }
   }
 });
 
-const createSaint = () => {};
+d.addEventListener("click", (e) => {
+  if (e.target.matches(".edit")) {
+    $tittle.textContent = "Editar Santo";
+    $form.nombre.value = e.target.dataset.name;
+    $form.constelacion.value = e.target.dataset.constelation;
+    $form.id.value = e.target.dataset.id;
+  }
 
-const updateSaint = () => {};
-
-const deleteSaint = () => {};
+  if (e.target.matches(".delete")) {
+    let isDelete = confirm(
+      `Estás seguro de eliminar el id ${e.target.dataset.id}`
+    );
+    if (isDelete) {
+      ajax({
+        url: `http://localhost:3000/santos/${e.target.dataset.id}`,
+        method: "DELETE",
+        success: (res) => {
+          location.reload();
+        },
+        error: (err) => {
+          alert(err);
+        },
+      });
+    }
+  }
+});
