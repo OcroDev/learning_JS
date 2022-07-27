@@ -1,0 +1,9 @@
+h1 {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  border-width: 3px;
+  padding: 0.5%;
+  border-style: groove;
+  border-width: thin /*thin - 1px, medium - 3px - thick - 5px*/;
+}

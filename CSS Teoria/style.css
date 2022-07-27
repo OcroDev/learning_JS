@@ -60,3 +60,168 @@
 .form-pseudoclases *:focus {
   background-color: skyblue;
 }
+
+.form-pseudoclases *:disabled {
+  background-color: pink;
+}
+a:visited {
+  color: olive;
+}
+.menu-pseudoclases a:visited {
+  color: olive;
+}
+
+.menu-pseudoclases a:hover {
+  color: orange;
+}
+
+.p-pseudoclases:hover {
+  font-size: 20px;
+}
+
+#temario-css:target {
+  background-color: lightgreen;
+}
+
+/*pseudoclases por posicion y tipo*/
+
+.lista-pseudoclases li:first-child {
+  color: green;
+}
+.lista-pseudoclases li:last-child {
+  color: green;
+}
+.lista-pseudoclases li:nth-child(3) {
+  color: navy;
+}
+.lista-pseudoclases li:nth-child(4n) {
+  font-size: 18px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+  font-weight: bold;
+}
+.lista-pseudoclases li:nth-child(even) {
+  background-color: yellow;
+}
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+  background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(2) {
+  background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p) {
+  background-color: beige;
+}
+
+/*pseudo elementos*/
+
+.saga-geminis::before {
+  content: "👨‍💻";
+}
+.saga-geminis::after {
+  content: "👩‍🚀";
+}
+.saga-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+
+.saga-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+.p-pseudoelementos::first-letter {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+  color: coral;
+}
+
+.p-pseudoelementos::selection {
+  background-color: black;
+  color: lightgreen;
+}
+
+.input-pseudoelementos::placeholder {
+  color: rgba(0, 128, 0, 0.267);
+}
+
+/*agrupacion de selectores*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  border-color: yellow;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+  border-width: 2px;
+}
+
+/*
+
+Algoritmo de CSS
+1) La cascada
+2) La especifidad
+3) La herencia
+
+*/
+
+blockquote#cita-marco .cita-marco {
+  background-color: lightsteelblue;
+}
+blockquote {
+  background-color: burlywood;
+}
+
+#cita-marco {
+  background-color: lightgreen;
+}
+
+blockquote.cita-marco {
+  background-color: tomato;
+}
+
+.cita-marco {
+  background-color: cornflowerblue;
+}
+
+blockquote#cita-marco {
+  background-color: lightsalmon;
+}
+
+.cita-marco {
+  background-color: aquamarine !important;
+}
+
+.cita-marco {
+  background-color: moccasin !important;
+  background-color: darkorange !important;
+  font-size: 32px;
+  border-style: dotted;
+  border-color: red;
+}
+
+.cita-marco cite {
+  background-color: pink;
+  background-color: inherit;
+  font-size: 24px;
+  font-size: initial;
+  border-style: inherit;
+  border-color: inherit;
+}
