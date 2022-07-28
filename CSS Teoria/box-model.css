@@ -1,9 +1,158 @@
+body {
+  margin: 0;
+}
 h1 {
   width: 400px;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 1px;
   border-width: 3px;
-  padding: 0.5%;
+  /*propiedades shorthand*/
+  border-color: green;
   border-style: groove;
   border-width: thin /*thin - 1px, medium - 3px - thick - 5px*/;
+  border: 2px dashed blue;
+}
+
+.caja1,
+.caja2 {
+  background-color: chocolate;
+  border: medium solid orange;
+  padding: 10px;
+  margin: 20px;
+
+  padding: 20px 40px;
+  margin: 40px 20px;
+
+  padding: 0 40px 20px;
+  margin: 50px 30px 20px;
+
+  padding: 0 40px 20px 50px;
+  margin: 100px 50px 30px 0;
+}
+
+/* Cajas de linea y cajas de bloque */
+.caja-linea,
+.caja-bloque {
+  background-color: darkcyan;
+  width: 500px;
+  height: 250px;
+  border: medium solid black;
+  padding: 16px;
+  margin: 32px;
+}
+
+.caja-linea {
+  /* display: block; */
+}
+
+.caja-bloque {
+  /* display: inline; */
+}
+
+/*propiedad display
+inline
+inline-block
+block
+*/
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden {
+  background-color: darkolivegreen;
+  color: white;
+  width: 600px;
+  height: 300px;
+}
+
+.caja-linea-bloque {
+  display: inline-block;
+  display: none;
+}
+/*overflow*/
+.overflow {
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+
+/* tamaño de caja*/
+.box-sizing-content,
+.box-sizing-border {
+  background-color: deepskyblue;
+  box-sizing: content-box;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: thick;
+  border-style: solid;
+  border-color: black;
+}
+.box-sizing-content {
+  box-sizing: content-box;
+}
+.box-sizing-border {
+  box-sizing: border-box;
+}
+
+.container-col-3 {
+  background-color: burlywood;
+  margin-top: 20px;
+  width: 600px;
+  height: 200px;
+}
+
+.container-col-3 > * {
+  width: 200px;
+  border: thin solid red;
+  float: left;
+  box-sizing: border-box;
+}
+
+/*float and clear*/
+
+.container-float {
+  background-color: cornflowerblue;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/*margin colapse vertical*/
+.margin-colapse {
+  background-color: blueviolet;
+}
+.margin-colapse > section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*margin collapse horizontal*/
+.margin-colapse span {
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: thin solid black;
+}
+
+/*centrado de cajas */
+.sitio-web {
+  border: thin solid black;
+  background-color: wheat;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+
+  margin-left: auto;
+  margin-right: auto;
 }

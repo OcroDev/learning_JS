@@ -1,21 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modelo de Caja en CSS</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="box-model.css">
-</head>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="box-model.css" />
+  </head>
 
-<body>
+  <body>
     <h1>Modelo de Caja en CSS</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit adipisci fugit aliquid. Optio similique veniam
-        exercitationem eum quam. Delectus quam iusto reiciendis accusantium ipsam corrupti itaque aut! Laborum, quod
-        ipsam?</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit adipisci
+      fugit aliquid. Optio similique veniam exercitationem eum quam. Delectus
+      quam iusto reiciendis accusantium ipsam corrupti itaque aut! Laborum, quod
+      ipsam?
+    </p>
+    <hr />
+    <div class="caja1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum
+      commodi numquam molestiae quae expedita architecto tenetur hic velit?
+      Assumenda fugit adipisci placeat recusandae soluta corrupti reiciendis, at
+      distinctio iste!
+    </div>
+    <div class="caja2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit officiis
+      tempore voluptas earum facere animi dignissimos inventore amet quia iste,
+      enim ipsa distinctio nobis officia eaque porro voluptate quam possimus.
+    </div>
+    <br />
     <a href="index.html#temario-css">back to top ⬆</a>
-</body>
+    <hr />
+    <h2>caja de lineas vs cajas de bloque</h2>
+    <div class="caja-bloque">esto es una caja de bloque</div>
+    <span class="caja-linea">esto es una caja de linea</span>
+    <span>esto es una caja de linea</span>
+    <hr />
+    <a href="index.html#temario-css">back to top ⬆</a>
+    <h2>Propiedad display</h2>
+    <div class="caja-none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      exercitationem debitis cupiditate tempora minima excepturi dolorum eum
+      magni illo vel explicabo eos, corrupti similique esse velit nulla, odit
+      nostrum earum!
+    </div>
+    <span class="caja-linea-bloque">esto es una caja de linea</span>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      impedit consectetur voluptatibus officia vero provident sapiente natus
+      quisquam cumque. Nulla magni soluta alias voluptatibus quos molestias
+      deleniti labore, provident placeat.
+    </p>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ol>
+    <table>
+      <tr>
+        <td>celda 1</td>
+        <td>celda 2</td>
+        <td>celda 3</td>
+      </tr>
+      <tr>
+        <td>celda 3</td>
+        <td>celda 4</td>
+        <td>celda 5</td>
+      </tr>
+      <tr>
+        <td>celda 5</td>
+        <td>celda 6</td>
+        <td>celda 7</td>
+      </tr>
+    </table>
 
+    <div class="caja-hidden">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      blanditiis tempora maiores reprehenderit, laudantium distinctio nostrum
+      quia quis aliquid beatae expedita iusto amet asperiores. Doloremque
+      molestias a voluptate soluta id?
+    </div>
+
+    <h2>propiedad overflow</h2>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid soluta
+      iste similique, consectetur laborum perspiciatis blanditiis, reprehenderit
+      voluptatibus quidem, laboriosam aspernatur. Eum blanditiis doloribus optio
+      debitis? Mollitia rem praesentium soluta.
+    </p>
+
+    <hr />
+    <h2>tamaño de caja</h2>
+    <div class="box-sizing-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a totam
+      hic quas voluptas corporis assumenda, adipisci asperiores dolorem
+      perferendis. Blanditiis adipisci architecto distinctio neque pariatur
+      eaque voluptatem voluptatum temporibus.
+    </div>
+    <div class="box-sizing-border">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a totam
+      hic quas voluptas corporis assumenda, adipisci asperiores dolorem
+      perferendis. Blanditiis adipisci architecto distinctio neque pariatur
+      eaque voluptatem voluptatum temporibus.
+    </div>
+    <article class="container-col-3">
+      <section class="item">seccion 1</section>
+      <section class="item">seccion 2</section>
+      <section class="item">seccion 3</section>
+    </article>
+
+    <article class="container-float">
+      <section class="float-right">este elemento flota a la derecha</section>
+      <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+        voluptas minus, consectetur deserunt perferendis ducimus modi omnis
+        architecto placeat tempora exercitationem iusto unde consequatur
+        explicabo expedita rem culpa maxime ipsum.
+      </section>
+      <section class="float-left">este elemetnto flota a la iz</section>
+    </article>
+    <div class="clear-fix"></div>
+    <hr />
+    <h2>colapso de margenes vertcales</h2>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+      praesentium dignissimos unde. Natus consequuntur consequatur vel ex, non
+      iste minus expedita quibusdam tenetur placeat quia laborum vitae quo odio
+      harum.
+    </div>
+    <article class="margin-colapse">
+      <section>seccion 1</section>
+      <section>seccion 2</section>
+      <section>
+        <span>span 1</span> <span>span 2</span> <span>span 3</span>
+      </section>
+    </article>
+    <hr />
+    <h2>centrado de cajas</h2>
+    <article class="sitio-web">
+      <header>cabecera</header>
+      <main>contenido principal</main>
+      <footer>pie de pagina</footer>
+    </article>
+    <a href="index.html#temario-css">back to top ⬆</a>
+  </body>
 </html>
