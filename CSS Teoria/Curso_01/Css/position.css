@@ -1,0 +1,115 @@
+/*position html
+static
+relative
+absolute
+sticky
+*/
+
+/*static*/
+.static {
+  background-color: yellow;
+  position: static;
+  top: 10px;
+  left: 10px;
+}
+
+/*relative*/
+.relative {
+  background-color: brown;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  top: 150px;
+  left: 10px;
+}
+
+/*absolute*/
+.absolute {
+  background-color: bisque;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  /* top: 0;
+  left: 0; */
+  right: 0;
+  bottom: 0;
+}
+.relative-parent {
+  background-color: khaki;
+  position: relative;
+  width: 600px;
+  height: 50px;
+}
+
+.absolute-child {
+  background-color: lightcoral;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*fixed*/
+.fixed {
+  background-color: lightgreen;
+  position: fixed;
+  width: 300px;
+  height: 100px;
+  right: 20px;
+  bottom: 10px;
+  top: 70px;
+  left: 300px;
+}
+
+/*sticky*/
+.sticky {
+  background-color: lightblue;
+  position: sticky;
+  top: 10px;
+}
+
+.sticky-parent {
+  width: 200px;
+  height: 500px;
+  border: thin dashed black;
+}
+
+.sticky-child {
+  background-color: lightsteelblue;
+  position: sticky;
+  top: 40px;
+}
+
+/* z-index  */
+.z-index1,
+.z-index2 {
+  background-color: aquamarine;
+  border: thin solid black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+.z-index2 {
+  top: -200px;
+  left: 100px;
+  z-index: 2;
+}
+
+.z-index-parent {
+  background-color: tomato;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.z-index-child {
+  background-color: mediumvioletred;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: -75px;
+  left: 75px;
+}

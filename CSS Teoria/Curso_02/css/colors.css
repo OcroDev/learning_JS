@@ -1,0 +1,41 @@
+/*color by name*/
+.color-by-name {
+  background-color: coral;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+}
+
+/*color hexadecimal*/
+.color-hex {
+  background-color: #ff66005b;
+  color: #663399;
+  border: thick solid #adff2f;
+  background-color: #c2001ac2;
+}
+/*color rgb*/
+.color-rgb {
+  background-color: rgba(0, 50%, 50%, 50%);
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+}
+/*color hsl*/
+.color-hsl {
+  background-color: hsl(30, 100%, 50%);
+  background-color: hsla(30, 100%, 50%, 0.5);
+  color: hsl(0, 0%, 0%);
+  border: thick solid greenyellow;
+}
+
+/*color transparent current*/
+.color-transparent-current {
+  background-color: #663399;
+  background-color: currentColor;
+  background-color: transparent;
+}
+
+/*Color opacity*/
+.color-opacity {
+  background-color: rgb(255, 0, 0);
+  color: rgb(41, 9, 156);
+  opacity: 0.15;
+}

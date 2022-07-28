@@ -1,0 +1,79 @@
+/*unidades de medidas css*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  /* background-color: black; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+/*pixeles*/
+.pixels {
+  background-color: cadetblue;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  font-size: 16px;
+  border: thick solid rebeccapurple;
+}
+/*unidades de medidas relativas a la fuente */
+.em {
+  background-color: rgb(124, 160, 95);
+  width: 500px;
+  height: 400px;
+  padding: 1em;
+  font-size: 1em;
+  border: thick solid rebeccapurple;
+}
+
+.rem {
+  background-color: rgb(95, 112, 160);
+  width: 31.25rem;
+  height: 25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: thick solid rebeccapurple;
+}
+
+.ex {
+  background-color: rgb(160, 95, 157);
+  padding: 1ex;
+  font-size: 1ex;
+  border: thick solid rebeccapurple;
+}
+
+.ch {
+  background-color: rgb(119, 160, 95);
+  width: 10ch;
+}
+
+/*unidades de medidas relativas al porcentaje */
+.percentages {
+  background-color: darkkhaki;
+  padding: 5%;
+  margin: 20% 10%;
+  width: 80%;
+  font-size: 100%;
+}
+
+/*unidades de medidas relativas al viewport*/
+.viewport {
+  background-color: darkcyan;
+  width: 100%;
+  height: 100vh;
+}
+
+.vmin,
+.vmax {
+  background-color: darksalmon;
+  border: thick solid black;
+  width: 50vmax;
+  height: 50vmin;
+}
