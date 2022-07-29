@@ -1,0 +1,52 @@
+/*Variables y funciones en CSS*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+:root {
+  color: darkgreen;
+  --default-color: skyblue;
+}
+
+.custom-props-1 {
+  --font-size: 24px;
+  --primary-color: gray;
+  background-color: var(--primary-color);
+}
+
+.custom-props-3 {
+  font-size: var(--font-size);
+  border: thin solid var(--border-color);
+}
+
+.props-title {
+  --primary-color: navy;
+  color: var(--primary-color, orange);
+  background-color: var(--default-color);
+}
+
+.ch-10 {
+  --padding-size: 3ch;
+  --num-ch: 10ch;
+  background-color: var(--default-color);
+  font-size: 2rem;
+  padding: var(--padding-size);
+  width: calc(var(--num-ch) + var(--padding-size) * 2);
+}
+
+.min-max {
+  background-color: var(--default-color);
+  margin-top: 1rem;
+  width: min(300px, 20vw);
+  height: min(200px, 25vh);
+}
+
+h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}

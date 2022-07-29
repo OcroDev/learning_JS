@@ -1,0 +1,42 @@
+/*propiedades de texto y fuentes
+
+font-display
+auto
+block
+swap
+fallback
+optional
+
+*/
+
+html {
+  font-family: sans-serif;
+}
+
+.font {
+  font-family: sans-serif;
+
+  font: 32px;
+  font-weight: 600;
+  font-style: oblique;
+  font-variant: small-caps;
+  line-height: 1;
+  font: italic small-caps bold 24px 1.5 monospace;
+}
+/*formato woff o woff2*/
+
+@font-face {
+  font-family: "bebas";
+  src: url("../assets/Fonts/Bebas/Bebas-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+.bebas {
+  font-family: "bebas", sans-serif;
+  font-size: 2rem;
+}
+/*google fonts*/
+.google-fonts {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
