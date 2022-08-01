@@ -1,0 +1,42 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: thick solid red;
+}
+.border-radius {
+  border-radius: 1rem;
+  border-top-left-radius: 5rem;
+  border-radius: 10rem 2rem 51rem 0;
+}
+
+.border-radius-2 {
+  border-radius: 20rem / 30rem;
+}
+
+.border-radius-3 {
+  border-radius: 50%;
+}
+
+.outline {
+  /* border: 0; */
+  color: wheat;
+  text-align: center;
+  font-size: 2rem;
+  outline-width: 5px;
+  outline-color: yellow;
+  outline-style: dashed;
+  outline: thick solid blue;
+  outline-offset: -0.5rem;
+}
+
+.input-outline:focus {
+  outline: 1px solid red;
+}
+
+.input-outline:hover {
+  border: 1px solid rebeccapurple;
+}
