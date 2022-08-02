@@ -1,0 +1,40 @@
+.lista {
+  list-style-type: lower-roman;
+  /*  list-style-type: none;
+  list-style-image: url("../assets/favicon.png"); */
+}
+
+.lista li {
+  list-style-type: none;
+}
+
+.lista li::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../assets/favicon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lista-2 li {
+  background-color: coral;
+  list-style-position: inside;
+  list-style-position: outside;
+}
+
+.lista-3 li {
+  background-color: aqua;
+  list-style: lower-latin url() outside;
+  list-style: lower-latin outside;
+}
+
+.text-col-4 {
+  list-style-position: inside;
+  column-count: 4;
+  column-gap: 1rem;
+  column-rule: medium dotted red;
+  column-width: 5rem;
+}
