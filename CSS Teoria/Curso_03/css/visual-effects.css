@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: thin solid #000;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.shadows {
+  /* box-shadow: mov-x, mov-y, blur-radius, spread-blur, color, inset/ouset*/
+  /* text-shadow: mov-x, mov-y, blur-radius, color,; */
+  box-shadow: 1rem 1rem 2rem 0rem #0007;
+  text-shadow: 0.5rem 0.5rem 0.5rem #000000;
+}
+
+.shadows-multiples {
+  box-shadow: 1rem 1rem 2rem 0rem #0007, -1rem 1rem 2rem 0rem #e0040477;
+  text-shadow: 0.5rem 0.5rem 0.5rem #000000, -0.5rem -0.5rem 0.5rem #0be05d;
+}
+
+.drop-shadows {
+  width: 600px;
+  height: auto;
+}
+.drop-shadows img {
+  /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+  filter: drop-shadow(1rem 1rem 0.8rem #ff6600);
+  max-width: 100%;
+}
+
+.linear-gradient {
+  /* background-color: #4158d0; */
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  background-image: linear-gradient(0deg, red 33%, blue 34% 66%, yellow 67%);
+}
+
+.radial-gradient {
+  background-image: radial-gradient(circle 8rem, cyan 33%, magenta 60%, yellow);
+  background-image: radial-gradient(circle 6rem, red 50%, white 51%);
+}
+
+.conic-gradient {
+  background-image: conic-gradient(red, green, blue);
+  background-image: conic-gradient(
+    from 90deg,
+    red 0deg 120deg,
+    white 120deg 240deg,
+    blue 240deg
+  );
+}
+
+.repeat-linear-gradient {
+  background-image: repeating-linear-gradient(
+    red 0 10px,
+    green 10px 20px,
+    blue 20px 30px
+  );
+  background-image: repeating-linear-gradient(
+    90deg,
+    red 0 10px,
+    green 10px 20px,
+    blue 20px 30px
+  );
+}
+.repeat-radial-gradient {
+  background-image: repeating-radial-gradient(
+    circle 4rem,
+    cyan,
+    magenta,
+    yellow
+  );
+}
+
+.repeat-conic-gradient {
+  background-image: repeating-conic-gradient(
+    red 0 8%,
+    yellow 8% 16%,
+    black 16% 24%
+  );
+}
+
+.chart-gradient {
+  background-image: conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+
+.donut-gradient {
+  background-image: radial-gradient(white 40%, black 41%, transparent 42%),
+    conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  border: thin solid #000;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.card img {
+  width: ;
+}

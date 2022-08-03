@@ -14,9 +14,12 @@ html {
   --form-text-color: #333;
   --form-success-color: #4caf50;
   --form-error-color: #f44334;
-  /* --form-bg-color */
+  --form-bg-color: #eee;
+  --form-border-color: #222;
+  --form-placeholder-color: #020eb893;
 
-  border: thin solid #000;
+  background-color: var(--form-bg-color);
+  border: thin solid var(--form-border-color);
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -27,4 +30,38 @@ html {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
+  font-family: sans-serif;
+  padding: 0.5rem;
+  color: var(--form-text-color);
+  caret-color: var(--form-placeholder-color);
+}
+
+.contact-form input[type="submit"] {
+  margin-bottom: 0;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--form-placeholder-color);
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.25rem;
+  border: 0;
+}
+.contact-form input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+.contact-form > *::placeholder {
+  color: var(--form-placeholder-color);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form > *[required]:invalid {
+  border: thin solid var(--form-error-color);
+}
+.contact-form > *[required]:valid {
+  border: thin solid var(--form-success-color);
 }
