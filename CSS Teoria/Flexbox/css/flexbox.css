@@ -1,0 +1,21 @@
+.container {
+  background-color: #333;
+  /* padding: 1rem; */
+  display: flex; /*alinea los items de flex*/
+  /* display: inline-flex; alinea las cajas de flex */
+}
+
+.items {
+  background-color: #666;
+  color: #fff;
+}
+.container-flex-direction {
+  /* display: inline-flex; alinea las cajas de flex */
+  background-color: #333;
+  display: flex; /*alinea los items de flex*/
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  height: 30vh;
+}
