@@ -72,3 +72,16 @@ body {
 .carousel-slide:nth-child(even) {
   background-color: #1e2345;
 }
+
+/*degradado en textos*/
+
+.gradient-text {
+  background-color: linear-gradient(45deg, magenta, yellow);
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
