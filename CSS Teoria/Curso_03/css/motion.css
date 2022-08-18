@@ -11,6 +11,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .box {
   width: 200px;
   height: 200px;
@@ -531,7 +535,8 @@ play-state
 .off-canvas-btn {
   position: fixed;
   bottom: 1rem;
-  left: 1rem;
+  /* left: 1rem; */
+  right: 1rem;
   z-index: 999;
   width: 3rem;
   height: 3rem;
@@ -542,11 +547,12 @@ play-state
 .off-canvas-burger {
   position: fixed;
   bottom: 1rem;
-  left: 1rem;
+  /* left: 1rem; */
+  right: 1rem;
   z-index: 998;
   width: 3rem;
   height: 0.6rem;
-  background-color: #000;
+  background-color: #d00;
   border-radius: 0.3rem;
   transform: rotate(0deg) translate(0, -1.2rem);
   transition: transform 0.5s ease, background-color 0.5s ease;
@@ -559,19 +565,19 @@ play-state
   display: block;
   width: 100%;
   height: 0.6rem;
-  background-color: #000;
+  background-color: #d00;
   border-radius: 0.3rem;
   transition: transform 0.5s ease;
 }
 
 .off-canvas-burger::before {
   transform: rotate(0deg) translate(0, -0.9rem);
-  background-color: #000;
+  background-color: #d00;
 }
 
 .off-canvas-burger::after {
   transform: rotate(0deg) translate(0, 0.3rem);
-  background-color: #000;
+  background-color: #d00;
 }
 
 .off-canvas-btn:checked + .off-canvas-burger {
@@ -688,4 +694,45 @@ play-state
 .modal:target {
   opacity: 1;
   pointer-events: auto;
+}
+
+/*star wars*/
+
+@keyframes introStarWars {
+  0% {
+    transform: perspective(100vh) rotateX(15deg) translateY(100%);
+  }
+  100% {
+    transform: perspective(100vh) rotateX(25deg) translateY(-200%);
+  }
+}
+
+.star-wars {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #ffb13a;
+  background-image: url("../assets/img/star.gif");
+}
+
+.star-wars-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  animation: introStarWars 50s linear infinite;
+}
+
+.star-wars h2,
+.star-wars h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.star-wars p {
+  font-size: 2rem;
+  line-height: 4rem;
 }

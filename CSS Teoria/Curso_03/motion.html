@@ -1,131 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/motion.css" />
     <title>Movimento CSS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Movimiento en CSS</h1>
     <hr />
     <section class="transitions">
-        <h2>Transiciones</h2>
-        <div class="box"></div>
-        <article class="card">
-            <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
-        </article>
+      <h2>Transiciones</h2>
+      <div class="box"></div>
+      <article class="card">
+        <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
+      </article>
     </section>
     <hr />
     <section class="transforms">
-        <h2>transformaciones</h2>
-        <h3>transformaciones 2d</h3>
-        <article class="card transform-2d">
-            <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
-        </article>
-        <h3>transformaciones 3d</h3>
-        <article class="card transform-3d">
-            <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
-        </article>
-        <h3>origen de la transformacion</h3>
-        <article class="card transform-origin">
-            <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
-        </article>
+      <h2>transformaciones</h2>
+      <h3>transformaciones 2d</h3>
+      <article class="card transform-2d">
+        <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
+      </article>
+      <h3>transformaciones 3d</h3>
+      <article class="card transform-3d">
+        <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
+      </article>
+      <h3>origen de la transformacion</h3>
+      <article class="card transform-origin">
+        <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
+      </article>
 
-        <h3>flip cards</h3>
-        <article class="flip-card-1">
-            <div class="flip-face flip-front">
-                <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
-            </div>
-            <div class="flip-face flip-back">
-                <img src="./assets/img/aves.png" alt="puesta de sol" />
-            </div>
-        </article>
+      <h3>flip cards</h3>
+      <article class="flip-card-1">
+        <div class="flip-face flip-front">
+          <img src="./assets/img/puesta-sol.jpg" alt="puesta de sol" />
+        </div>
+        <div class="flip-face flip-back">
+          <img src="./assets/img/aves.png" alt="puesta de sol" />
+        </div>
+      </article>
     </section>
     <hr />
     <section class="animations">
-        <h2>animaciones</h2>
-        <article class="card my-animation">
-            <img src="./assets/img/aves.png" alt="puesta de sol" />
-        </article>
-        <article class="card my-animation-2">
-            <img src="./assets/img/aves.png" alt="puesta de sol" />
-        </article>
+      <h2>animaciones</h2>
+      <article class="card my-animation">
+        <img src="./assets/img/aves.png" alt="puesta de sol" />
+      </article>
+      <article class="card my-animation-2">
+        <img src="./assets/img/aves.png" alt="puesta de sol" />
+      </article>
     </section>
 
     <hr />
     <section class="motion-examples">
-        <h2>ejemplos de efectos de movimientos en css</h2>
-        <h3>Fade in - Fade Out</h3>
-        <div class="fade-in">🐱‍👤</div>
-        <div class="fade-out">🐱‍🏍</div>
-        <h3>sacudir</h3>
-        <div class="shake">🦥</div>
-        <h3>pulsaciones</h3>
-        <div class="pulse">💓</div>
-        <div style="font-size: 5rem">you're cool</div>
-        <h4>Heart</h4>
-        <div class="heart pulse"></div>
-        <h4>Loader / Spinner</h4>
-        <div class="spinner"></div>
-        <h3>Botones animados</h3>
-        <button class="btn anim-bottom to-left">Animacion Izquierda</button>
-        <button class="btn anim-bottom to-center">Animacion centro</button>
-        <button class="btn anim-bottom to-right">Animacion derecha </button>
-        <button class="btn anim-bg-gradient">Fondo con gradiente </button>
+      <h2>ejemplos de efectos de movimientos en css</h2>
+      <h3>Fade in - Fade Out</h3>
+      <div class="fade-in">🐱‍👤</div>
+      <div class="fade-out">🐱‍🏍</div>
+      <h3>sacudir</h3>
+      <div class="shake">🦥</div>
+      <h3>pulsaciones</h3>
+      <div class="pulse">💓</div>
+      <div style="font-size: 5rem">you're cool</div>
+      <h4>Heart</h4>
+      <div class="heart pulse"></div>
+      <h4>Loader / Spinner</h4>
+      <div class="spinner"></div>
+      <h3>Botones animados</h3>
+      <button class="btn anim-bottom to-left">Animacion Izquierda</button>
+      <button class="btn anim-bottom to-center">Animacion centro</button>
+      <button class="btn anim-bottom to-right">Animacion derecha</button>
+      <button class="btn anim-bg-gradient">Fondo con gradiente</button>
 
-        <h3>Tabs menu</h3>
-        <nav class="tabs-menu ">
-            <input type="radio" id="tab-1" name="tabs">
-            <label for="tab-1">Sección 1</label>
-            <input type="radio" id="tab-2" name="tabs">
-            <label for="tab-2">Sección 2</label>
-            <input type="radio" id="tab-3" name="tabs">
-            <label for="tab-3">Sección 3</label>
-            <input type="radio" id="tab-4" name="tabs">
-            <label for="tab-4">Sección 4</label>
-            <div class="tab-bg-hover"></div>
-        </nav>
+      <h3>Tabs menu</h3>
+      <nav class="tabs-menu">
+        <input type="radio" id="tab-1" name="tabs" />
+        <label for="tab-1">Sección 1</label>
+        <input type="radio" id="tab-2" name="tabs" />
+        <label for="tab-2">Sección 2</label>
+        <input type="radio" id="tab-3" name="tabs" />
+        <label for="tab-3">Sección 3</label>
+        <input type="radio" id="tab-4" name="tabs" />
+        <label for="tab-4">Sección 4</label>
+        <div class="tab-bg-hover"></div>
+      </nav>
 
+      <h3>menu haburguesa (menu off canvas)</h3>
+      <input type="checkbox" class="off-canvas-btn" name="" id="" />
+      <label class="off-canvas-burger"></label>
+      <nav class="off-canvas-menu">
+        <div class="off-canvas-menu-container">
+          <a href="#" class="off-canvas-link">seccion 1</a
+          ><a href="#" class="off-canvas-link">seccion 2</a
+          ><a href="#" class="off-canvas-link">seccion 3</a
+          ><a href="#" class="off-canvas-link">seccion 4</a
+          ><a href="#" class="off-canvas-link">seccion 5</a>
+        </div>
+      </nav>
+      <h3>Ventana Modal</h3>
+      <a href="#modal-1">Abrir Modal</a>
+      <article id="modal-1" class="modal">
+        <div class="modal-container">
+          <a href="#cerrar" class="modal-close">X</a>
+          <h2>Esto es una ventana modal</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim amet
+            quibusdam necessitatibus quia magni nam asperiores rem eum corrupti
+            vero modi officia at, commodi, fugit facilis? Qui, sit iure.
+            Blanditiis!
+          </p>
+          <ul>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+          </ul>
+        </div>
+      </article>
 
-        <h3>menu haburguesa (menu off canvas)</h3>
-        <input type="checkbox" class="off-canvas-btn" name="" id="">
-        <label class="off-canvas-burger"></label>
-        <nav class="off-canvas-menu">
-            <div class="off-canvas-menu-container">
-                <a href="#" class="off-canvas-link">seccion 1</a><a href="#" class="off-canvas-link">seccion 2</a><a
-                    href="#" class="off-canvas-link">seccion 3</a><a href="#" class="off-canvas-link">seccion 4</a><a
-                    href="#" class="off-canvas-link">seccion 5</a>
-            </div>
-        </nav>
-        <h3>Ventana Modal</h3>
-        <a href="#modal-1">Abrir Modal</a>
-        <article id="modal-1" class="modal">
-            <div class="modal-container">
-                <a href="#cerrar" class="modal-close">X</a>
-                <h2>Esto es una ventana modal</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim amet quibusdam necessitatibus quia
-                    magni nam
-                    asperiores rem eum corrupti vero modi officia at, commodi, fugit facilis? Qui, sit iure. Blanditiis!
-                </p>
-                <ul>
-                    <li><a href="">Enlace</a></li>
-                    <li><a href="">Enlace</a></li>
-                    <li><a href="">Enlace</a></li>
-                    <li><a href="">Enlace</a></li>
-                    <li><a href="">Enlace</a></li>
-                    <li><a href="">Enlace</a></li>
-                </ul>
-            </div>
-        </article>
+      <h3>star wars intro</h3>
+      <article class="star-wars">
+        <div class="star-wars-container">
+          <h2>Episode III</h2>
+          <h3>The Revenge of Sith</h3>
+          <p>
+            War! The Republic is crumbling under attacks by the ruthless Sith
+            Lord, Count Dooku. There are heroes on both sides. Evil is
+            everywhere.
+          </p>
+          <p>
+            In a stunning move, the fiendish droid leader, General Grievous, has
+            swept into the Republic capital and kidnapped Chancellor Palpatine,
+            leader of the Galactic Senate.
+          </p>
+          <p>
+            As the Separatist Droid Army attempts to flee the besieged capital
+            with their valuable hostage, two Jedi Knights lead a desperate
+            mission to rescue the captive Chancellor....
+          </p>
+        </div>
+      </article>
     </section>
-
-
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</body>
-
+  </body>
 </html>
